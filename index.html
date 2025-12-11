@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DryFruitHub - Premium Dry Fruits Online | Fresh Almonds Cashews | WhatsApp Order</title>
+    <meta name="description" content="Buy premium dry fruits online - California Almonds, W320 Cashews, Iranian Pistachios, Golden Raisins, Medjool Dates. Fresh stock, Pan India delivery, COD available. Order via WhatsApp!">
+    <meta name="keywords" content="dry fruits online, buy almonds, cashews online, pistachios, raisins, dates, premium dry fruits, wholesale nuts, fresh dryfruits delivery">
+    
+    <!-- Open Graph & Twitter Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DryFruitHub - Premium Dry Fruits & Nuts Online">
+    <meta property="og:description" content="Fresh California Almonds, Premium Cashews, Iranian Pistachios. Pan India delivery with COD. Order via WhatsApp!">
+    <meta property="og:image" content="https://dryfruithub.com/og-image.jpg">
+    <meta property="og:url" content="https://dryfruithub.com">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DryFruitHub",
+        "url": "https://dryfruithub.com",
+        "logo": "https://dryfruithub.com/logo.png",
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+91-9876543210",
+            "contactType": "WhatsApp Orders",
+            "availableLanguage": ["Hindi", "English"]
+        }],
+        "sameAs": ["https://wa.me/919876543210"]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-gold: #D4A574;
+            --primary-brown: #B8860B;
+            --dark-brown: #8B4513;
+            --light-cream: #F5E8C7;
+            --cream-bg: #FFF8F0;
+            --white: #FFFFFF;
+            --text-dark: #2D1B14;
+            --text-light: #A0522D;
+            --whatsapp-green: #25D366;
+            --shadow-light: 0 10px 40px rgba(212,165,116,0.2);
+            --shadow-hover: 0 25px 60px rgba(212,165,116,0.4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-dark);
+            background: var(--cream-bg);
+        }
+
+        /* Perfect Mobile-First Typography */
+        h1 { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 700; line-height: 1.2; }
+        h2 { font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 600; margin-bottom: 1rem; }
+        h3 { font-size: clamp(1.2rem, 4vw, 1.4rem); font-weight: 600; }
+        p { font-size: clamp(0.95rem, 3vw, 1.1rem); }
+
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 clamp(15px, 4vw, 30px); 
+        }
+
+        /* Header - Perfect Responsive Navbar */
+        header {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: clamp(12px, 2vw, 20px) 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: clamp(15px, 4vw, 30px);
+            padding-right: clamp(15px, 4vw, 30px);
+        }
+        .logo {
+            font-size: clamp(1.4rem, 4vw, 2rem);
+            font-weight: 800;
+            color: var(--dark-brown);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: clamp(20px, 3vw, 40px);
+            align-items: center;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+            transition: color 0.3s;
+            position: relative;
+        }
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--primary-gold);
+        }
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--primary-gold);
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            padding: 8px;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--dark-brown);
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(212,165,116,0.95) 0%, rgba(139,69,19,0.9) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700"><rect fill="%23f5e8c7" width="1200" height="700"/><circle cx="200" cy="200" r="120" fill="%23D4A574" opacity="0.3"/><circle cx="1000" cy="500" r="150" fill="%23B8860B" opacity="0.2"/></svg>');
+            background-size: cover;
+            text-align: center;
+            padding: clamp(80px, 15vw, 150px) clamp(20px, 5vw, 50px) clamp(60px, 10vw, 100px);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(0,0,0,0.3) 70%);
+        }
+        .hero-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+        .hero-subtitle { 
+            color: rgba(255,255,255,0.9); 
+            font-size: clamp(1rem, 3vw, 1.3rem); 
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+        .cta-primary {
+            background: var(--whatsapp-green);
+            color: white;
+            padding: clamp(14px, 3vw, 18px) clamp(28px, 6vw, 40px);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: clamp(1rem, 2.8vw, 1.2rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+            transition: all 0.3s;
+            margin: 1rem 0.5rem 0 0;
+        }
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(37,211,102,0.5);
+        }
+
+        /* Sections */
+        .section { padding: clamp(60px, 12vw, 100px) 0; }
+        .section-title {
+            text-align: center;
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            color: var(--dark-brown);
+            margin-bottom: clamp(30px, 6vw, 50px);
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: clamp(60px, 10vw, 100px);
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--primary-brown));
+            border-radius: 2px;
+        }
+
+        /* Grid System */
+        .grid { 
+            display: grid; 
+            gap: clamp(20px, 4vw, 30px); 
+        }
+        .grid-cols-1 { grid-template-columns: 1fr; }
+        .grid-cols-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+        .grid-cols-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+        /* Product Cards */
+        .product-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: clamp(20px, 4vw, 30px);
+            box-shadow: var(--shadow-light);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(212,165,116,0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-hover);
+        }
+        .product-icon {
+            font-size: clamp(3rem, 12vw, 5rem);
+            text-align: center;
+            margin-bottom: 1rem;
+            height: clamp(80px, 15vw, 120px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-price {
+            font-size: clamp(1.4rem, 5vw, 2rem);
+            font-weight: 800;
+            color: var(--primary-gold);
+            margin: 0.5rem 0 1rem 0;
+        }
+        .product-features {
+            list-style: none;
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+        }
+        .product-features li {
+            padding: 0.4rem 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .product-features li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--primary-gold);
+            font-weight: bold;
+        }
+        .cta-secondary {
+            background: var(--primary-gold);
+            color: white;
+            padding: clamp(12px, 2.5vw, 16px) clamp(20px, 4vw, 28px);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            flex-shrink: 0;
+        }
+        .cta-secondary:hover {
+            background: var(--primary-brown);
+            transform: translateY(-2px);
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(40px, 8vw, 60px);
+            align-items: center;
+        }
+        @media (min-width: 768px) { .about-grid { grid-template-columns: 1fr 1fr; } }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: clamp(20px, 4vw, 30px);
+        }
+        .feature-card {
+            text-align: center;
+            padding: clamp(24px, 5vw, 32px);
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s;
+        }
+        .feature-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+        .feature-icon { font-size: clamp(2.5rem, 8vw, 3.5rem); margin-bottom: 1rem; }
+
+        /* Contact Section */
+        .contact { background: linear-gradient(135deg, var(--dark-brown) 0%, var(--primary-brown) 100%); color: white; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(24px, 5vw, 40px);
+            text-align: center;
+        }
+        .contact-item h4 {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            margin-bottom: 1rem;
+            color: var(--light-cream);
+        }
+        .contact-item a {
+            color: var(--light-cream);
+            text-decoration: none;
+            font-size: clamp(1rem, 2.8vw, 1.1rem);
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+        .contact-item a:hover { color: var(--white); }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: clamp(20px, 4vw, 30px);
+            right: clamp(20px, 4vw, 30px);
+            width: clamp(60px, 12vw, 70px);
+            height: clamp(60px, 12vw, 70px);
+            background: var(--whatsapp-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+            transition: all 0.3s;
+            z-index: 9999;
+            font-size: clamp(1.5rem, 6vw, 2rem);
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(37,211,102,0.6);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-brown);
+            color: var(--light-cream);
+            text-align: center;
+            padding: clamp(40px, 8vw, 60px) clamp(20px, 5vw, 40px);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .footer-links a {
+            color: var(--light-cream);
+            text-decoration: none;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--primary-gold); }
+
+        /* Mobile Menu */
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgba(212,165,116,0.98);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transform: translateX(100%);
+                transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                backdrop-filter: blur(20px);
+            }
+            .nav-menu.active { transform: translateX(0); }
+            .nav-menu li { opacity: 0; transform: translateX(30px); animation: slideIn 0.4s forwards; }
+            @keyframes slideIn {
+                to { opacity: 1; transform: translateX(0); }
+            }
+        }
+
+        /* Responsive Grid Adjustments */
+        @media (max-width: 640px) {
+            .grid-cols-3 { grid-template-columns: 1fr; }
+            .hero { padding: clamp(60px, 20vw, 100px) clamp(20px, 8vw, 40px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="nav-container">
+            <a href="#home" class="logo">🥜 DryFruitHub</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Premium Dry Fruits<br>Fresh From Source</h1>
+            <p class="hero-subtitle">California Almonds • W320 Cashews • Iranian Pistachios • Golden Raisins<br>Pan India Delivery | COD Available | Fresh Daily Packing</p>
+            <a href="https://wa.me/919876543210?text=Hi%20DryFruitHub!%20Show%20me%20your%20premium%20dry%20fruits%20catalogue" class="cta-primary" target="_blank">💬 Order on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">Fresh Premium Collection</h2>
+            <div class="grid grid-cols-3">
+                <div class="product-card">
+                    <div class="product-icon">🥜</div>
+                    <h3>California Almonds</h3>
+                    <div class="product-price">₹899 / 500g</div>
+                    <ul class="product-features">
+                        <li>100% Pure California Import</li>
+                        <li>Whole & Blanched Available</li>
+                        <li>Vitamin E Rich Superfood</li>
+                    </ul>
+                    <a href="https://wa.me/919876543210?text=Hi!%20California%20Almonds%20500g%20(₹899)%20details" class="cta-secondary" target="_blank">Order Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🥥</div>
+                    <h3>Premium Cashews</h3>
+                    <div class="product-price">₹1299 / 500g</div>
+                    <ul class="product-features">
+                        <li>W320 Export Grade</li>
+                        <li>Rich Creamy Texture</li>
+                        <li>Zero Preservatives</li>
+                    </ul>
+                    <a href="https://wa.me/919876543210?text=Hi!%20Premium%20Cashews%20500g%20(₹1299)" class="cta-secondary" target="_blank">Buy Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🫘</div>
+                    <h3>Iranian Pistachios</h3>
+                    <div class="product-price">₹1499 / 250g</div>
+                    <ul class="product-features">
+                        <li>Super Green Premium</li>
+                        <li>Perfectly Roasted</li>
+                        <li>Antioxidant Rich</li>
+                    </ul>
+                    <a href="https://wa.me/919876543210?text=Hi!%20Iranian%20Pistachios%20250g%20(₹1499)" class="cta-secondary" target="_blank">Order Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🍇</div>
+                    <h3>Golden Raisins</h3>
+                    <div class="product-price">₹399 / 500g</div>
+                    <ul class="product-features">
+                        <li>Sweet Seedless Variety</li>
+                        <li>Perfect for Sweets</li>
+                        <li>High Iron Content</li>
+                    </ul>
+                    <a href="https://wa.me/919876543210?text=Hi!%20Golden%20Raisins%20500g%20(₹399)" class="cta-secondary" target="_blank">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🥢</div>
+                    <h3>Medjool Dates</h3>
+                    <div class="product-price">₹599 / 500g</div>
+                    <ul class="product-features">
+                        <li>Jumbo Saudi Import</li>
+                        <li>Juicy & Naturally Sweet</li>
+                        <li>Diabetes Friendly</li>
+                    </ul>
+                    <a href="https://wa.me/919876543210?text=Hi!%20Medjool%20Dates%20500g%20(₹599)" class="cta-secondary" target="_blank">Buy Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🌰</div>
+                    <h3>Premium Walnuts</h3>
+                    <div class="product-price">₹999 / 250g</div>
+                    <ul class="product-features">
+                        <li>Brain Food Essential</li>
+                        <li>Whole California Halves</li>
+                        <li>Omega-3 Rich</li>
+                    </ul>
+                    <a href="https://wa.me/919876543210?text=Hi!%20Premium%20Walnuts%20250g%20(₹999)" class="cta-secondary" target="_blank">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="grid grid-cols-3">
+                <a href="https://wa.me/919876543210?text=Hi!%20Show%20complete%20Almonds%20catalogue" class="product-card" target="_blank">
+                    <div class="product-icon">🥜</div>
+                    <h3>Almonds Collection</h3>
+                    <ul class="product-features">
+                        <li>California • Mamra • Blanched</li>
+                        <li>10+ Premium Varieties</li>
+                        <li>₹699 - ₹1499/kg</li>
+                    </ul>
+                </a>
+                <a href="https://wa.me/919876543210?text=Hi!%20Show%20Cashew%20collection" class="product-card" target="_blank">
+                    <div class="product-icon">🥥</div>
+                    <h3>Cashew Collection</h3>
+                    <ul class="product-features">
+                        <li>W320 • W240 • Fried</li>
+                        <li>Plain & Masala Options</li>
+                        <li>₹999 - ₹1999/kg</li>
+                    </ul>
+                </a>
+                <a href="https://wa.me/919876543210?text=Hi!%20Pistachios%20complete%20range" class="product-card" target="_blank">
+                    <div class="product-icon">🫘</div>
+                    <h3>Pistachio Range</h3>
+                    <ul class="product-features">
+                        <li>Iranian Super Green</li>
+                        <li>Roasted & Salted</li>
+                        <li>₹1999 - ₹2999/kg</li>
+                    </ul>
+                </a>
+                <a href="https://wa.me/919876543210?text=Hi!%20Raisins%20complete%20collection" class="product-card" target="_blank">
+                    <div class="product-icon">🍇</div>
+                    <h3>Raisins Collection</h3>
+                    <ul class="product-features">
+                        <li>Golden • Brown • Black</li>
+                        <li>Seedless Varieties</li>
+                        <li>₹299 - ₹699/kg</li>
+                    </ul>
+                </a>
+                <a href="https://wa.me/919876543210?text=Hi!%20Dates%20complete%20range" class="product-card" target="_blank">
+                    <div class="product-icon">🥢</div>
+                    <h3>Dates Collection</h3>
+                    <ul class="product-features">
+                        <li>Medjool • Ajwa • Pitted</li>
+                        <li>Saudi & Iranian Import</li>
+                        <li>₹599 - ₹1499/kg</li>
+                    </ul>
+                </a>
+                <a href="https://wa.me/919876543210?text=Hi!%20Dry%20fruit%20mix%20gift%20packs" class="product-card" target="_blank">
+                    <div class="product-icon">🥗</div>
+                    <h3>Gift Packs</h3>
+                    <ul class="product-features">
+                        <li>Festival Special Mix</li>
+                        <li>Premium Gift Boxes</li>
+                        <li>₹999 - ₹4999</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Why 25K+ Families Trust Us</h2>
+            <div class="about-grid">
+                <div>
+                    <h3>Direct Farm to Doorstep</h3>
+                    <p><strong>100% Pure & Natural:</strong> No chemicals, no preservatives, no adulteration. Freshly packed daily in hygienic conditions for maximum freshness & nutrition.</p>
+                    <p><strong>Wholesale Prices:</strong> Retail quantities at factory rates. Perfect for daily consumption, gifting & festivals across India.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🥬</div>
+                        <h4>100% Pure</h4>
+                        <p>Lab Tested Quality</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h4>Fast Delivery</h4>
+                        <p>2-3 Days Pan India</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h4>Best Prices</h4>
+                        <p>Wholesale Direct</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📞</div>
+                        <h4>24/7 Support</h4>
+                        <p>WhatsApp Instant Reply</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>📱 WhatsApp Orders</h4>
+                    <a href="https://wa.me/919876543210" target="_blank">+91 98765 43210</a>
+                    <p>24/7 Instant Reply</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📞 Customer Care</h4>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                    <p>10AM - 8PM Daily</p>
+                </div>
+                <div class="contact-item">
+                    <h4>✉️ Email Support</h4>
+                    <a href="mailto:orders@dryfruithub.com">orders@dryfruithub.com</a>
+                    <p>Reply within 6 hours</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📦 Delivery Info</h4>
+                    <p><strong>Pan India</strong></p>
+                    <p>COD Available<br>Free Shipping > ₹999</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 DryFruitHub. All Rights Reserved | Fresh Premium Dry Fruits | Pan India Delivery | WhatsApp Shopping | COD Available</p>
+            <div class="footer-links">
+                <a href="https://wa.me/919876543210" target="_blank">📱 WhatsApp</a>
+                <a href="tel:+919876543210">📞 Call</a>
+                <a href="mailto:orders@dryfruithub.com">✉️ Email</a>
+                <a href="#home">🏠 Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210?text=Hi%20DryFruitHub!%20Show%20me%20today's%20fresh%20dry%20fruits%20catalogue" class="whatsapp-float" target="_blank">💬</a>
+
+    <script>
+        // Perfect Mobile Menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        navLinks.forEach((link, index) => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                document.querySelector('.nav-link.active')?.classList.remove('active');
+                link.classList.add('active');
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // WhatsApp Analytics
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', () => {
+                gtag?.('event', 'whatsapp_click', {
+                    'product': link.textContent,
+                    'section': window.location.hash || 'hero'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
